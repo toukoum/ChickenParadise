@@ -7,16 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 120vh;
-    background: url('images/bg.png') no-repeat;
-    background-size:cover;
-    background-position: center;
-}
+
 
 header{
     position: fixed;
@@ -43,6 +34,7 @@ header{
     border-radius: 10px;
     padding: 20px;
     padding-right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     
 }
 

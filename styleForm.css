@@ -1,9 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 130vh;
+    background: url('images/bg.png') no-repeat;
+    background-size:cover;
+    background-position: center;
+}
 
 
 
-
-.wrapper{
-    position: relative;
+.wrapper.Login{
+    position: absolute;
+    top: 30vh;
     width: 600px;
     height: 500px;
     background: transparent;
@@ -15,6 +25,24 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+.wrapper.Register{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255,  .5);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .wrapper .form-box{
     width: 100%;
