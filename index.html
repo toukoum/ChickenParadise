@@ -5,19 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicken Paradise</title>
     <link rel="stylesheet" type="text/css" href="styleHeader.css">
+    <link rel="stylesheet" type="text/css" href="styleForm.css">
 </head>
 <body>
-    <header>
-        
-        <img src="images/2.png" alt="logo">
+    <header> 
+        <img class="logo" src="images/3.png" alt="logo">
         <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
+            <a id ="nav-link" href="#">Home</a>
+            <a id ="nav-link" href="#">Products</a>
+            <a id ="nav-link" href="#">Contact</a>
             <button class="btnLogin-popup">Login</button>
-            <a href="#"><img src="images/panier3.jpg" alt="basket icon"></a>
-        </nav>
-        
+            <a href="#"><img src="images/panier.png" alt="basket icon"></a>
+        </nav>        
     </header>
+
+    <div class="wrapper">
+       
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><img src="images/enveloppe-de-courrier-electronique.png" alt="icon mail"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><img src="images/intimite.png" alt="icon cadenas"></span>
+                    <input type="Password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label ><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password ?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an Account ? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
