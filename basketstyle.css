@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/***********HEADER**********/
+header{
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    margin-bottom: 0;
+}
+
+.logo{
+    height: 8em;
+}
+
+
+.navigation{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    padding-right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
+    
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+#nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: red;
+    transform-origin: right;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    opacity: .2;
+}
+
+#nav-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.navigation a img{
+    height: 2em;
+    margin-bottom: -10px;
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+    
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff ;
+    font-weight: bolder;
+    color: rgba(255, 0, 0, 0.3);
+}
+
+.icon img{
+    height: 1em;
+}
+
+/******MAIN *******/
+ 
+main{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.wrapper.Consult{
+    width: 95%;
+    height: 1300px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255,  .5);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    margin-bottom: 15px;
+}
+
+/*Historique*/
+
+.Basket{
+    width: 65%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    gap: 50px;
+}
+
+.Basket h2 {
+    margin-left: 60px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.listecommande{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 150px;
+   
+}
+.commande{
+    border: solid 2px black; 
+    width: 900px;
+
+}
+
+.titrecommande{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titrecommande p{
+    font-size: 20px;
+}
+
+.contenucommande{
+    display: flex;
+    gap: 10px;
+}
+.commande img{
+    border-radius: 90px;
+    width: 400px;
+    height: 150px;
+    margin: 15px;
+}
+
+
+/* Image droite*/
+.imagepanier{
+    width: 50%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.commande p {
+    font-size: 20px;
+}
+
+/********* FOOTER ******/ 
+
+footer{
+    background: rgb(0,0, 0, 0.1);
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    margin-top: 15px;
+    
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icons a img {
+    height: 3em;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.container1 h3{
+    margin-bottom: -25px;
+}
+
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.container2 img{
+    height: 6em;
+    margin-left: 20px;
+    border: 1px solid black;
+    margin-top: -40px;
+    position: absolute;
+    transition: .2s;
+}
+
+.container2 img:hover{
+    height:6.1em;
+}
+
